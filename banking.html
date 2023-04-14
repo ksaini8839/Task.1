@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bank Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>      
+    <h1> TSF  bank </h1>
+    <div class="wrapper">
+        <div class="rupees">
+           <table cellspacing=10px style="border: 1px solid" >
+               <tr>
+                   <th>Amount</th>
+                   <th>Quantity</th>
+                   <th>Amount</th>
+                   <th>Quantity</th>
+               </tr>
+             <tr>
+                    <td>100</td>
+                    <td id="php_fivehundred">-</td>
+                    <td>5</td>
+                    <td id="five">-</td>
+                </tr>
+                <tr>
+                    <td>50</td>
+                    <td id="php_hundred">-</td>
+                    <td>2</td>
+                    <td id="two">-</td>
+                </tr>
+                <tr> 
+                    <td colspan="3"><input type="button" value="Enter Currency" onclick="amount()"></td>
+                </tr>
+               
+           </table> 
+        </div>
+        <h3 class="total">Total Amount:
+            <span id="tot_Amounts"></span>     
+        </h3>
+        <h3 class="total">Amount Deducted:
+            <span id="Ent_Amounts"></span>     
+        </h3>
+        <h3 class="total">Balance:
+            <span id="Balance"></span>     
+        </h3>
+        <p class="btn btn-1"><input style="background-color: green" type="button" value="Enter Amount" onclick="EnteredAmounts()"></p>
+        <p class="btn btn-2"><input style="background-color: red" type="button" value="Generate Slip" onclick="GeneratingSlips()"></p>
+        <p id="zero" class="zeros"></p>
+
+        </div>
+    </div>
+    <script src="work.js"></script>
+  
+</body>
+
+</html>
+
